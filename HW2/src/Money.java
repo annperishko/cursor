@@ -25,7 +25,7 @@ public class Money {
 
     @Override
     public String toString() {
-        return + hrn + "," + coins;
+        return +hrn + "," + coins;
     }
 
     public Money sum(Money forSum) {
@@ -95,46 +95,13 @@ public class Money {
         return new Money(hrn, (byte) coins);
     }
 
-   /* @Override
+    @Override
     public boolean equals(Object obj) {
         if (obj instanceof Money) {
             Money secondMoney = (Money) obj;
-            return this.hryvnia == secondMoney.hryvnia && this.kopeck == secondMoney.kopeck;
+            return this.hrn == secondMoney.hrn && this.coins == secondMoney.coins;
         }
         return false;
-    }*/
+    }
 
-
- /*   public boolean isEqual(Object money) {
-        if (money instanceof Money) {
-            Money moneyForEqual = (Money) money;
-            double firstSum = (this.hrn * 100 + this.coins) / 100d;
-            double secondSum = (moneyForEqual.hrn * 100 + moneyForEqual.coins) / 100d;
-            if (firstSum == secondSum) {
-                return true;
-            }
-        }
-        return false;
-    }*/
- public boolean equals(Object money) {
-     if (money instanceof Money) {
-         Money moneyForEqual = (Money) money;
-         double firstSum = (this.hrn * 100 + this.coins) / 100d;
-         double secondSum = (moneyForEqual.hrn * 100 + moneyForEqual.coins) / 100d;
-         if (firstSum == secondSum) {
-             System.out.println(this.hrn + "," + this.coins + " = "
-                     + moneyForEqual.hrn + "," + moneyForEqual.coins);
-             return true;
-         } else if (firstSum > secondSum) {
-             System.out.println(this.hrn + "," + this.coins + " > "
-                     + moneyForEqual.hrn + "," + moneyForEqual.coins);
-             return false;
-         } else {
-             System.out.println(this.hrn + "," + this.coins + " < "
-                     + moneyForEqual.hrn + "," + moneyForEqual.coins);
-             return false;
-         }
-     }
-     return false;
- }
 }

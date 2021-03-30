@@ -46,12 +46,11 @@ public class Main {
         System.out.println(resFraction.toString());
 
 
-
 //Task 5
-        Money firstMoney = new Money(12, (byte) 25);
-        Money secondMoney = new Money(2, (byte) 50);
+        Money firstMoney = new Money(15, (byte) 50);
+        Money secondMoney = new Money(15, (byte) 50);
 
-        
+
         System.out.println("5. Money: ");
 
 
