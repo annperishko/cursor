@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-public class GenericArray<T extends Comparable<T> >{
+public class GenericArray<T extends Comparable<? super T> >{
     private T[] array;
 
     public GenericArray(T[] array) {

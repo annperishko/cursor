@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-public class MyList<T extends Comparable<T>> {
+public class MyList<T extends Comparable<? super T>> {
     private ArrayList<T> arrayList;
 
     public MyList() {
