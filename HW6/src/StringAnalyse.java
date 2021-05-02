@@ -34,9 +34,6 @@ public class StringAnalyse {
         return signs.length();
     }
 
-    private String getLetters(String str) {
-        return str.replaceAll("[^a-zA-Zа-яёА-ЯЁ]", "");
-    }
 
     public int amountOfNumbers(String str) {
         String numbers = str.replaceAll("[^\\d]", "");
