@@ -8,7 +8,7 @@ public class Person {
     private final Countries country;
     private Continents continent;
 
-    public Person(String name, int age, Gender gender, Countries country){
+    public Person(String name, int age, Gender gender, Countries country) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -31,12 +31,12 @@ public class Person {
         return gender;
     }
 
-    public Continents getContinent(){
+    public Continents getContinent() {
         return continent;
     }
 
     @Override
     public String toString() {
-        return  name +"("+ age +")" ;
+        return name + "(" + age + ")";
     }
 }

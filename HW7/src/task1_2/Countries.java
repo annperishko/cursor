@@ -14,10 +14,9 @@ public enum Countries {
     private final String country;
     private final Continents continent;
 
-    Countries (String country, Continents continent){
+    Countries(String country, Continents continent) {
         this.country = country;
         this.continent = continent;
-
     }
 
     public String getCountry() {
@@ -29,7 +28,7 @@ public enum Countries {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.country;
     }
 }

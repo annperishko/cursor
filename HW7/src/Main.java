@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import static task1_2.Countries.*;
 import static task1_2.Gender.*;
 
-
 public class Main {
     public static void main(String[] args) {
         List<Person> personList = new ArrayList<>();
@@ -51,8 +50,5 @@ public class Main {
                         });
                     });
                 });
-
-
-
     }
 }

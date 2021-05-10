@@ -7,5 +7,4 @@ public enum Continents {
     ANTARCTICA,
     SOUTH_AMERICA,
     NORTH_AMERICA
-
 }
